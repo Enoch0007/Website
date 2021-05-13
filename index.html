@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Website</title>
+		<link rel="stylesheet" href="style.css">
+		
+		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+		
+</head>
+<body>
+		<section id="header">
+				<div class="container">
+						<img src="images/logo.jpg" class="logo">
+						<div class="header-text">
+							<h1> The purpose is to teach,<br>bring learning<br>to the children who can't afford  EDUCATION</h1>
+							<span class="square"></span>
+							<p>We ensures that each student receives the opportunity to be placed in challenging but rewarding classes</p>
+							<button class="common-btn">Read More</button>
+							<div class="line">
+									<span class="line-1"></span><br>
+									<span class="line-2"></span><br>
+									<span class="line-3"></span>
+							</div>
+						</div>
+				</div>
+		</section>
+		
+		<nav id="sideNav">
+				<ul>
+						<li><a href="#header">HOME</a></li>
+						<li><a href="#about">ABOUT US</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+						<li><a href="#donate">DONATE</a></li>
+				</ul>
+		</nav>
+		<img src="images/menu.png" id="menuBtn">
+		
+		
+	<!--about-->
+	
+	<section id="about">
+			<div class="about-left-col">
+					<img src="images/about.png">
+			</div>
+			<div class="about-right-col">
+					<div class="about-text">
+							<h1> About Us</h1>
+							<span class="square"></span>
+
+							<p>Charity is all about building a better world, and what better way to do that than to equip the 
+									youngest generations with the skills and resources to fulfill their potential? 
+									Our organization pursue that exact goal, looking to ensure that the future for our children remains bright 
+									even in the face of mounting global challenges.</p><br><br>
+									<div class="line">
+									<span class="line-1"></span><br>
+									<span class="line-2"></span><br>
+									<span class="line-3"></span>
+							</div>
+							<h2>“When you educate one person you can change a life, when you educate many you can change the world”</h2>
+							<h3>----Shai Reshef</h3>
+					</div>
+	</section>
+	
+	<!--contact-->
+	
+	
+	<section id="contact">
+			<div class="container contact-row">
+					<div class="contact-left-col">
+							<h1>For more Information<br>You can  contact us on:</h1>
+					</div>
+					
+					
+					<div class="contact-right-col">
+							<img src="images/contact.png">
+					</div>
+			</div>
+	</section>
+	
+
+	<!--social-icons-->
+
+	<div class="social-icons">
+			<img src="images/facebook.png" width="5000" height="20">
+			<img src="images/instagram.png" width="5000" height="20">
+			<img src="images/twitter.png" width="5000" height="20">
+			<img src="images/linkedin.png" width="5000" height="20">
+	</div>
+	
+	<!--donate-->
+	
+	
+	<section id="donate">
+			<div class="donate-left-col">
+					<img src="images/donate.png">
+			</div>
+			<div class="donate-right-col">
+					<div class="donate-text">
+							<h1> Donate Us</h1>
+							<span class="square"></span>
+							<p>You can help us by contributing to our organization, So that we can make children learn every possible things they are interested in.
+								<h2>“The small charity that comes from the heart is better than the great charity that comes from the head.”</h2>
+								<h3>----Ivan Panin</h3>
+							</p>
+							
+							<div class="button">
+									Donate 
+							</div>
+					</div>
+	</section>
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script>
+				var menuBtn = document.getElementById("menuBtn");
+				var sideNav = document.getElementById("sideNav");
+				
+				sideNav.style.right = "-250px";
+				menuBtn.onclick = function(){
+						if(sideNav.style.right == "-250px"){
+								sideNav.style.right = "0";
+						}
+						else{
+								sideNav.style.right = "-250px";
+						}
+				}
+				
+				var scroll = new SmoothScroll('a[href*="#"]', {
+						speed: 1000,
+						speedAsDuration: true
+				
+				});
+				
+		
+		
+		
+		
+		</script>
+
+		
+		
+		
+</body>
+</html>
